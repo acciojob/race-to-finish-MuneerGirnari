@@ -28,9 +28,9 @@ let p5 = new Promise((resolve) => {
 					});
 
 window.promises = [p1,p2,p3,p4,p5];
-
+let element = document.getElementById("output");
 Promise.any(promises).then((data) => {
-	console.log(data);
+	element.innerText = data;
 });
 // Do not change the code above this
 // add your promises to the array `promises`
